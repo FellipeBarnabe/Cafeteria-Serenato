@@ -1,2 +1,3 @@
 # Cafeteria-Serenato
-A project using bootstrap from Alura company.
+
+A project using bootstrap and new aprouch from Alura company.
