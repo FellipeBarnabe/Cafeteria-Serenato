@@ -1,5 +1,27 @@
-body {
+:root{
+  --font-principal: 'Barlow', sans-serif;
   --bege: #E6E0D6;
   --marrom-escuro: #816D4F;
   --marrom-claro: #B29463;
+}
+
+body {
+  
+  font-family: var(--font-principal);
+   
+}
+
+.nav-link{
+
+  color: black;
+
+}
+
+input[type="checkbox"]:checked {
+  background-color: var(--marrom-claro);
+  border-color: var(--marrom-claro);
+}
+
+input[type="checkbox"]:focus {
+  box-shadow: 0 0 0 0.25rem rgba(178, 148, 99, 0.25);
 }
