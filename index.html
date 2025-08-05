@@ -7,9 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./" type="image/x-icon">
   <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Barlow:wght@400;600&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
   <title>Serenatto</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
@@ -121,7 +119,7 @@
           <img class="w-100 img-fluid " src="" alt="">
           <img class="w-100 img-fluid " src="" alt="">
           <div class="Titulo__card ">
-            <p class="mt-4 titulo__card-especialidade " >Delivery</p>
+            <p class="mt-4 titulo__card-especialidade ">Delivery</p>
             <p class="text-start card-text">
               Para quem deseja desfrutar no conforto de casa, oferecemos delivery dos produtos.
               Com o mesmo cardápio variado de sempre, sem perder nosso sabor e padrão de qualidade.
@@ -174,8 +172,70 @@
       </div>
     </div>
 
+    <section class="banners banner-3 d-flex flex-column justify-content-center text-center"></section>
+
+    <div class="d-flex justify-content-center align-items-center mb-5 ">
+      <form class="border border-secondary  my-4 my-xl-5 p-3 text-center 
+             w-50 w-md-75 w-xxl-50 mx-auto rounded-2">
+        <h5 class="text-start fw-bold py-2">Entre em Contato!</h5>
+
+        <div class="my-3 ">
+          <input type="email" class="form-control border-secondary rounded-1 mb-3" placeholder="Nome"
+            aria-label="Digite seu nome" />
+
+          <input type="text" class="form-control border-secondary rounded-1 mb-3" placeholder="Email" />
+
+          <input type="text" class="form-control border-secondary rounded-1 mb-3" placeholder="Telefone" />
+
+          <div class="mb-3">
+            
+            <select class="form-select border-secondary rounded-1">
+              <option selected>Preferência de contato</option>
+              <option value="email">E-mail</option>
+              <option value="telefone">Telefone</option>
+              <option value="whatsapp">WhatsApp</option>
+            </select>
+
+          </div>
+
+
+          <div class="text-start">
+            <label for="customRange2" class="form-label">
+              <h2 class="  range__mensagem">Nivel de satisfacão:</h2>
+            </label>
+            <input type="range" class="form-range" min="0" max="5" id="customRange2">
+
+            <div class="form-check py-2 mb-2">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+              <label class="form-check-label" for="flexCheckIndeterminate">
+                Deseja receber novidades e promoções por email?
+              </label>
+            </div>
+
+            <div class="d-grid gap-2">
+              <button type="button" class="text-black botao__enviar rounded-1">Enviar</button>
+            </div>
+          </div>
+
+
+        </div>
+
+      </form>
+    </div>
 
   </main>
+
+ <footer class="text-center borda__footer" >
+  <div class="d-flex justify-content-center py-4 icones__link ">
+    
+    <a href="#"><p class="mx-3"><i class="bi bi-whatsapp"></i></p></a>
+    <a href="#"><p class="mx-3"><i class="bi bi-instagram"></i></p></a>
+    <a href="#"><p class="mx-3"><i class="bi bi-twitter"></i></p></a>
+
+  </div>
+
+        <p class="card-text py-3 ">2023 <i class="bi bi-c-circle"></i> Desenvolvido por Alura | Projeto fictício sem fins comerciais.</p>
+    </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"

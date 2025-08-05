@@ -31,8 +31,18 @@ input[type="checkbox"]:focus {
   outline: none;
 }
 
+.banners{
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 .banner-1{
   background-image: url(./assets/banner-1.png);
+  
 }
 
 .banner-2{
@@ -42,14 +52,13 @@ input[type="checkbox"]:focus {
 
 }
 
-.banners{
-  width: 100%;
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+.banner-3{
+  background-image: url(./assets/banner-3.png);
+   margin-top: 7%;
+
 }
+
+
 
 .banners-titulo{
   --bs-bg-opacity: .2;
@@ -92,8 +101,64 @@ a{
   box-shadow: none !important;
 }
 
+.botao__enviar{
+  background-color: var(--marrom-claro);
+  padding: 1%;
+  font-size: 20px;
+  font-weight: 500 !important;
+}
+
+.range__mensagem{
+
+  font-size: 16px;
+  
+
+}
 
 
+#customRange2::-webkit-slider-runnable-track {
+  background: #404040;
+  height: 6px;
+  border-radius: 3px;
+}
 
+#customRange2::-webkit-slider-thumb {
+  background: var(--marrom-claro); 
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-top: -7px; 
+  appearance: none;
+}
 
+#customRange2::-moz-range-track {
+  background: #404040;
+  height: 6px;
+  border-radius: 3px;
+}
 
+#customRange2::-moz-range-thumb {
+  background: var(--marrom-claro);
+  border: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.borda__footer{
+
+  background-color: var(--marrom-claro);
+  margin-top: -1%;
+}
+
+.card-text{
+
+  font-size: 16px;
+  font-weight: 400 !important;
+
+}
+
+.icones__link i {
+  font-size: 1.5rem; 
+}
