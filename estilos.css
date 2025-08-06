@@ -162,3 +162,70 @@ a{
 .icones__link i {
   font-size: 1.5rem; 
 }
+
+
+.dark-mode{
+  background-color: #212529;
+  color: white;
+  border: none;
+  
+}
+
+.dark-mode .navbar {
+  background-color: #343a40 !important; 
+}
+
+.dark-mode .nav-link{
+  color: white !important;
+}
+
+
+
+.dark-mode .produtos__link {
+  color: white !important;
+}
+
+.dark-mode{
+  color: #212529;
+}
+
+.dark-mode .card {
+  background-color: #212529 !important; 
+  border-color: #444 !important;     
+}
+
+
+.dark-mode .form-control,
+.dark-mode .form-select {
+  background-color: #343a40 !important; 
+  color: white !important;              
+  border-color: #6c757d !important;     
+}
+
+.dark-mode .form-control::placeholder {
+  color: #ccc !important;               
+}
+
+.dark-mode .entre__contato{
+
+  color: white !important;
+
+}
+
+.dark-mode .boots__icon,
+.dark-mode .botao__enviar
+{
+  color: white !important;
+}
+
+
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode .card-text,
+.dark-mode .titulo__card-especialidade,
+.dark-mode .paragrafo__boas-vindas,
+.dark-mode .nosso__espaco,
+.dark-mode .promoção__check {
+  color: white !important;
+}
