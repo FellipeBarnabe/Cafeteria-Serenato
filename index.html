@@ -88,16 +88,43 @@
               Uma excelente opção para quem busca um lugar tranquilo e aconchegante.
             </p>
             <div class="card-header sem-estilo-header">
-              <p class="text-center fw-bold card__color"><a href="#" class="card__link">Quero detalhes</a></p>
+              <p class="text-center fw-medium card__color">
+                <button class="btn btn-link p-0 border-0 fw-bold text-dark card__link" data-bs-toggle="modal"
+                  data-bs-target="#modalCafeBistro">
+                  Quero detalhes
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="modalCafeBistro" tabindex="-1" aria-labelledby="modalCafeBistroLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalCafeBistroLabel">Café & Bistrô</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+              </div>
+              <div class="modal-body">
+                Somos conhecidos por nossos cafés especiais e ambiente aconchegante.
+                Aqui você encontra uma variedade de bebidas, sobremesas e salgados para todos os gostos.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <!-- Modal-1-close -->
+
 
       <div class="col-12 col-md-4 col-xxl-4">
         <div class="card rounded-1 border-1">
           <img class="w-100 img-fluid" src="./assets/buffet-card.png"
-            alt="Foto do balção de uma cozinha cheia de ingredientes">
+            alt="Foto do balcão de uma cozinha cheia de ingredientes">
           <div class="Titulo__card">
             <p class="mt-4 titulo__card-especialidade">Buffet</p>
             <p class="text-start card-text">
@@ -106,11 +133,34 @@
               atendimento atencioso e profissional.
             </p>
             <div class="card-header sem-estilo-header">
-              <p class="text-center fw-bold card__color"><a href="#" class="card__link">Quero detalhes</a></p>
+              <p class="text-center fw-medium card__color">
+                <a href="#" class="card__link" data-bs-toggle="modal" data-bs-target="#modalBuffet">Quero detalhes</a>
+              </p>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- Modal Buffet -->
+      <div class="modal fade" id="modalBuffet" tabindex="-1" aria-labelledby="modalBuffetLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fw-bold" id="modalBuffetLabel">Buffet</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+            </div>
+            <div class="modal-body">
+              Oferecemos um serviço de buffet completo e personalizável, ideal para eventos corporativos,
+              festas particulares e produções. Trabalhamos com ingredientes frescos e de alta qualidade,
+              garantindo sabor e apresentação impecáveis para cada ocasião.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal Buffet2-close -->
 
       <div class="col-12 col-md-4 col-xxl-4 ">
         <div class="card rounded-1 border-1 ">
@@ -123,11 +173,45 @@
               Com o mesmo cardápio variado de sempre, sem perder nosso sabor e padrão de qualidade.
             </p>
             <div class="card-header sem-estilo-header">
-              <p class="text-center fw-bold card__color"><a href="#" class="card__link">Quero detalhes</a></p>
+              <p class="text-center fw-medium card__color">
+                <a href="#" class="card__link" data-bs-toggle="modal" data-bs-target="#modalDelivery">Quero detalhes</a>
+              </p>
             </div>
           </div>
         </div>
       </div>
+
+      <!--modal delivey -->
+
+      <div class="modal fade" id="modalDelivery" tabindex="-1" aria-labelledby="modalDeliveryLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fw-bold" id="modalDeliveryLabel">Delivery</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                Oferecemos duas opções para receber nossos produtos:
+              </p>
+              <ul>
+                <li>
+                  <strong>Encomendas para eventos:</strong> Produzimos e entregamos os itens de café do nosso cardápio
+                  em grandes quantidades para seus eventos. É necessário fazer a reserva com 72h de antecedência.
+                </li>
+                <li>
+                  <strong>Entregas pelo aplicativo iFood:</strong> Consulte nosso cardápio pelo app e faça seu pedido de
+                  forma rápida e prática.
+                </li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
     </div>
     <section class="banners banner-2 d-flex flex-column justify-content-center text-center ">
@@ -154,26 +238,38 @@
         <div class="col-12 col-md-4 col-xxl-4 text-center">
           <img src="./assets/produtos-cafe-especial.png" alt="Imagem de uma xícara de café especial" class="img-fluid">
           <button class="btn btn-link p-0 border-0 produtos__link mt-2 fw-bold text-dark" data-bs-toggle="modal"
-            data-bs-target="#modalExemplo">
+            data-bs-target="#modalExemplo2">
             Cafés Especiais
           </button>
         </div>
         <div class="col-12 col-md-4 col-xxl-4 text-center">
           <img src="./assets/produtos-vitaminas.png" alt="Imagem de vários shakes de vitaminas e suco de fruta"
             class="img-fluid">
-          <a class="produtos__link d-block mt-2 fw-bold" href="#">Smoothies e Vitaminas</a>
+          <button class="btn btn-link p-0 border-0 produtos__link mt-2 fw-bold text-dark" data-bs-toggle="modal"
+            data-bs-target="#modalExemplo3">
+            Smoothies e Vitaminas
+          </button>
         </div>
         <div class="col-12 col-md-4 col-xxl-4 text-center">
           <img src="./assets/produtos-paes.png" alt="Imagem de uma cesta de pães" class="img-fluid">
-          <a class="produtos__link d-block mt-2 fw-bold" href="#">Pães e Focaccias</a>
+          <button class="btn btn-link p-0 border-0 produtos__link mt-2 fw-bold text-dark" data-bs-toggle="modal"
+            data-bs-target="#modalExemplo4">
+            Pães e focaccias
+          </button>
         </div>
         <div class="col-12 col-md-4 col-xxl-4 text-center">
           <img src="./assets/produtos-doces.png" alt="Imagem de um bolo de confeiteria" class="img-fluid">
-          <a class="produtos__link d-block mt-2 fw-bold" href="#">Doces</a>
+          <button class="btn btn-link p-0 border-0 produtos__link mt-2 fw-bold text-dark" data-bs-toggle="modal"
+            data-bs-target="#modalExemplo5">
+            Doces
+          </button>
         </div>
         <div class="col-12 col-md-4 col-xxl-4 text-center">
           <img src="./assets/produtos-salgados.png" alt="Imagem de uma torta salgada" class="img-fluid">
-          <a class="produtos__link d-block mt-2 fw-bold" href="#">Salgados</a>
+          <button class="btn btn-link p-0 border-0 produtos__link mt-2 fw-bold text-dark" data-bs-toggle="modal"
+            data-bs-target="#modalExemplo6">
+            Salgados
+          </button>
         </div>
       </div>
     </div>
@@ -263,30 +359,175 @@
   </script>
 
   <div class="modal fade" id="modalExemplo" tabindex="-1" aria-labelledby="modalExemploLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title fw-bold" id="modalExemploLabel">Cafés Tradicionais</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-      </div>
-      <div class="modal-body">
-        <div class="imagem__cafe-tradicional d-flex justify-content-center">
-          <img src="./assets/produtos-cafe-tradicional.png">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold especialidades__titulo" id="modalExemploLabel">Cafés Tradicionais</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
         </div>
-        <p>Somos conhecidos também por nossos cafés especiais, 
-          que são cuidadosamente preparados com grãos selecionados de alta qualidade e técnicas de preparo precisas.</p>
-          <P>Entre as opções de cafés especiais do Café & Bistrô Serenatto, destacamos o café aeropress, que é preparado com uma técnica de imersão e pressão, resultando em uma bebida de sabor intenso e aroma acentuado. 
-            Outra opção popular é o café Hario V60, que é preparado com um filtro de papel em formato de cone e resulta em uma bebida limpa e suave, ressaltando as notas sensoriais dos grãos. 
-            Além disso, oferecemos uma variedade de bebidas geladas, como o café gelado, que é preparado com grãos torrados escuros e servido com gelo e leite, 
-            resultando em uma bebida refrescante e saborosa</P>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        <div class="modal-body">
+          <div class="imagem__cafe-tradicional d-flex justify-content-center">
+            <img src="./assets/produtos-cafe-tradicional.png">
+          </div>
+          <p>O café Serenatto é conhecido por seus blends tradicionais e saborosos, que agradam aos amantes da bebida.
+            Nossos grãos são cuidadosamente selecionados e torrados para produzir um aroma rico e sabor equilibrado</p>
+          <P>Entre os cafés mais tradicionais da casa, destaca-se o "Café Serenatto", um blend exclusivo de grãos com
+            notas de chocolate e caramelo.
+            Outra opção popular é o "Café Italiano", um café expresso encorpado e intenso.
+            Já o "Café Cappuccino" é uma escolha clássica para quem prefere uma bebida cremosa e suave</P>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary text-black botao__modal border-0 "
+            data-bs-dismiss="modal">Fechar janela</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
+  <div class="modal fade" id="modalExemplo2" tabindex="-1" aria-labelledby="modalExemploLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold especialidades__titulo" id="modalExemploLabel">Cafés Tradicionais</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <div class="imagem__cafe-tradicional d-flex justify-content-center">
+            <img src="./assets/produtos-cafe-especial.png">
+          </div>
+          <p>Somos conhecidos também por nossos cafés especiais,
+            que são cuidadosamente preparados com grãos selecionados de alta qualidade e técnicas de preparo precisas.
+          </p>
+          <P>Entre as opções de cafés especiais do Café & Bistrô Serenatto, destacamos o café aeropress, que é preparado
+            com uma técnica de imersão e pressão, resultando em uma bebida de sabor intenso e aroma acentuado.
+            Outra opção popular é o café Hario V60, que é preparado com um filtro de papel em formato de cone e resulta
+            em uma bebida limpa e suave, ressaltando as notas sensoriais dos grãos.
+            Além disso, oferecemos uma variedade de bebidas geladas, como o café gelado,
+            que é preparado com grãos torrados escuros e servido com gelo e leite, resultando em uma bebida refrescante
+            e saborosa.</P>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary text-black botao__modal border-0 "
+            data-bs-dismiss="modal">Fechar janela</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalExemplo3" tabindex="-1" aria-labelledby="modalExemploLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold especialidades__titulo" id="modalExemploLabel">Cafés Tradicionais</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <div class="imagem__cafe-tradicional d-flex justify-content-center">
+            <img src="./assets/produtos-vitaminas.png">
+          </div>
+          <p>Somos reconhecidos também por nossos smoothies e vitaminas, preparados com frutas frescas,
+            ingredientes naturais e combinações pensadas para oferecer sabor e nutrição em cada gole.</p>
+          <P>Entre as opções de smoothies do Café & Bistrô Serenatto, destacamos o smoothie tropical,
+            feito com manga, abacaxi e leite de coco, resultando em uma bebida cremosa e refrescante.
+            Outra opção muito apreciada é o smoothie de frutas vermelhas, que combina morango, framboesa e amora,
+            trazendo um sabor levemente ácido e adocicado.
+            Já para quem prefere algo mais energético, nossas vitaminas são preparadas com frutas como banana e mamão,
+            podendo receber adicionais como aveia ou mel,
+            garantindo uma bebida nutritiva e deliciosa para qualquer momento do dia.</P>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary text-black botao__modal border-0 "
+            data-bs-dismiss="modal">Fechar janela</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalExemplo4" tabindex="-1" aria-labelledby="modalExemploLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold especialidades__titulo" id="modalExemploLabel">Pães e Focaccias</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <div class="imagem__cafe-tradicional d-flex justify-content-center">
+            <img src="./assets/produtos-paes.png">
+          </div>
+          <p>Somos igualmente conhecidos por nossos pães e focaccias artesanais,
+            preparados diariamente com ingredientes selecionados e fermentação adequada para garantir textura,
+            sabor e frescor incomparáveis.</p>
+          <P>Entre as opções do Café & Bistrô Serenatto, destacamos nosso pão rústico de fermentação natural, com casca
+            crocante e miolo macio, perfeito para acompanhar cafés e refeições leves.
+            Outra especialidade é a focaccia tradicional, feita com azeite de oliva extra virgem, ervas frescas e sal
+            grosso, resultando em um aroma irresistível e sabor marcante.
+            Também oferecemos versões recheadas, como a focaccia de tomate-cereja e alecrim, que combina suavidade e
+            frescor em cada mordida.</P>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary text-black botao__modal border-0 "
+            data-bs-dismiss="modal">Fechar janela</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalExemplo5" tabindex="-1" aria-labelledby="modalExemploLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold especialidades__titulo" id="modalExemploLabel">Pães e Focaccias</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <div class="imagem__cafe-tradicional d-flex justify-content-center">
+            <img src="./assets/produtos-doces.png">
+          </div>
+          <p>Somos conhecidos também por nossos doces artesanais, preparados com receitas especiais que equilibram
+            sabor,
+            textura e apresentação, transformando cada pedaço em uma experiência única.</p>
+          <P>Entre as opções do Café & Bistrô Serenatto, destacamos o bolo de chocolate cremoso, feito com cacau de alta
+            qualidade e cobertura rica e aveludada.
+            Outra escolha muito apreciada é a torta de limão, que combina base crocante, creme suave e um toque cítrico
+            refrescante.
+            Também oferecemos brownies, cookies e outras delícias que acompanham perfeitamente um café ou chá, tornando
+            cada visita ao bistrô ainda mais doce.</P>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary text-black botao__modal border-0 "
+            data-bs-dismiss="modal">Fechar janela</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalExemplo6" tabindex="-1" aria-labelledby="modalExemploLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold especialidades__titulo" id="modalExemploLabel">Pães e Focaccias</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <div class="imagem__cafe-tradicional d-flex justify-content-center">
+            <img src="./assets/produtos-salgados.png">
+          </div>
+          <p>Somos também reconhecidos por nossos salgados artesanais, preparados com receitas caseiras e ingredientes
+            de alta qualidade,
+            garantindo sabor e frescor em cada preparo.</p>
+          <P>Entre as opções do Café & Bistrô Serenatto, destacamos a empada de frango cremosa, feita com massa leve e
+            recheio suculento, perfeita para acompanhar um bom café.
+            Outra escolha muito apreciada é a quiche de queijo e alho-poró, que combina suavidade e aroma marcante.
+            Também oferecemos coxinhas, pães de queijo e outros clássicos, sempre fresquinhos e prontos para tornar seu
+            momento no bistrô ainda mais saboroso.</P>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary text-black botao__modal border-0 "
+            data-bs-dismiss="modal">Fechar janela</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
 
