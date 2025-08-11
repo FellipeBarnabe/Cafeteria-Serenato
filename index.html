@@ -15,6 +15,7 @@
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
   <link rel="stylesheet" href="./estilos.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -75,10 +76,14 @@
 
     <h2 class="text-center fw-bold my-3 my-xl-5 py-4 nossos__serviços">Nossos Serviços</h2>
 
-    <div class="container row mx-auto g-4 d-flex justify-content-center">
+    <section>
+      <div class="container-fluid row mx-auto g-4 d-flex justify-content-center w-100">
+    </section>
 
-      <div class="col-12 col-md-4 col-xxl-4">
-        <div class="card rounded-1 border-1">
+    <div class="  row mx-auto g-5 align-items-center card-conteiner">
+
+      <div class=" col-12 col-xl-4 col-xxl-4">
+        <div class="card rounded-3 border-1 meu-card">
           <img class="w-100 img-fluid " src="./assets/cafe-card.png"
             alt="Foto do interior de uma cafeteiria visto do balcão do lado do cliente">
           <div class="Titulo__card">
@@ -101,18 +106,55 @@
         <!-- Modal -->
         <div class="modal fade" id="modalCafeBistro" tabindex="-1" aria-labelledby="modalCafeBistroLabel"
           aria-hidden="true">
-          <div class="modal-dialog modal-lg">
+          <div class="modal-dialog modal-sm ">
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title" id="modalCafeBistroLabel">Café & Bistrô</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
               </div>
               <div class="modal-body">
-                Somos conhecidos por nossos cafés especiais e ambiente aconchegante.
-                Aqui você encontra uma variedade de bebidas, sobremesas e salgados para todos os gostos.
+                <div>
+                  <h2
+                    class="img-fluid Cafe__bistro-titulo rounded-top-3 d-flex justify-content-between align-items-center"
+                    data-bs-toggle="collapse" data-bs-target="#conteudoCascata" style="cursor: pointer;">
+                    Café
+                    <i class="bi bi-chevron-up"></i>
+                  </h2>
+
+                  <p class="collapse mt-2 cafe__bistro-paragrafo" id="conteudoCascata">
+                    Temos um excelente espaço para alimentação e descanso,
+                    com a vitrine recheada de doces, salgados,
+                    cafés tradicionais e especiais para desfrutar seus melhores momentos.
+                  </p>
+
+                  <h2 class="img-fluid Cafe__bistro-titulo d-flex justify-content-between align-items-center"
+                    data-bs-toggle="collapse" data-bs-target="#conteudoCascata1" style="cursor: pointer;">
+                    Bistrô
+                    <i class="bi bi-chevron-up"></i>
+                  </h2>
+
+                  <p class="collapse mt-2 cafe__bistro-paragrafo" id="conteudoCascata1">
+                    Além de cafés o dia todo, oferecemos refeições em horário de almoço (11 às 15h) com pratos
+                    deliciosos de bistrô!
+                  </p>
+
+                  <h2 class="img-fluid Cafe__bistro-titulo  d-flex justify-content-between align-items-center"
+                    data-bs-toggle="collapse" data-bs-target="#conteudoCascata2" style="cursor: pointer;">
+                    Coworking
+                    <i class="bi bi-chevron-up"></i>
+                  </h2>
+
+                  <p class="collapse mt-2 cafe__bistro-paragrafo" id="conteudoCascata2">
+                    Temos espaço adequado para trabalho, com conexão de internet de alta velocidade e instalações
+                    confortáveis para reuniões.
+                  </p>
+
+                </div>
+
               </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+
+              <div class="modal-footer ">
+                <!--<button type="button" class="btn btn-secondary botão__fechar-footer" data-bs-dismiss="modal">Fechar</button> -->
               </div>
             </div>
           </div>
@@ -121,8 +163,8 @@
       <!-- Modal-1-close -->
 
 
-      <div class="col-12 col-md-4 col-xxl-4">
-        <div class="card rounded-1 border-1">
+      <div class="col-12 col-xl-4 col-xxl-4">
+        <div class="card rounded-3 border-1 meu-card">
           <img class="w-100 img-fluid" src="./assets/buffet-card.png"
             alt="Foto do balcão de uma cozinha cheia de ingredientes">
           <div class="Titulo__card">
@@ -150,20 +192,42 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
             </div>
             <div class="modal-body">
-              Oferecemos um serviço de buffet completo e personalizável, ideal para eventos corporativos,
-              festas particulares e produções. Trabalhamos com ingredientes frescos e de alta qualidade,
-              garantindo sabor e apresentação impecáveis para cada ocasião.
+              <div>
+                <h2
+                  class="img-fluid Cafe__bistro-titulo rounded-top-3 d-flex justify-content-between align-items-center"
+                  data-bs-toggle="collapse" data-bs-target="#conteudoCascata" style="cursor: pointer;">
+                  Eventos
+                  <i class="bi bi-chevron-up"></i>
+                </h2>
+
+                <p class="collapse mt-2 cafe__bistro-paragrafo" id="conteudoCascata">
+                  Organizamos buffet com cardápios variados e personalizados para casamentos,
+                  festas de aniversário e outros eventos!
+                </p>
+
+                <h2 class="img-fluid Cafe__bistro-titulo d-flex justify-content-between align-items-center"
+                  data-bs-toggle="collapse" data-bs-target="#conteudoCascata1" style="cursor: pointer;">
+                  Catering
+                  <i class="bi bi-chevron-up"></i>
+                </h2>
+
+                <p class="collapse mt-2 cafe__bistro-paragrafo" id="conteudoCascata1">
+                  Oferecemos serviço de alimentação variada para coffee breaks, produções e bastidores.
+                </p>
+
+
+              </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+              <!--<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button> -->
             </div>
           </div>
         </div>
       </div>
       <!-- Modal Buffet2-close -->
 
-      <div class="col-12 col-md-4 col-xxl-4 ">
-        <div class="card rounded-1 border-1 ">
+      <div class="col-12 col-xl-4 col-xxl-4 ">
+        <div class="card rounded-3 border-1 meu-card ">
           <img class="w-100 img-fluid " src="./assets/delivery-card.png"
             alt="Foto de uma refeição sendo prepara para entrega">
           <div class="Titulo__card ">
@@ -180,33 +244,43 @@
           </div>
         </div>
       </div>
+    </div>
+    <!--modal delivey -->
 
-      <!--modal delivey -->
+    <div class="modal fade" id="modalDelivery" tabindex="-1" aria-labelledby="modalDeliveryLabel" aria-hidden="true">
 
-      <div class="modal fade" id="modalDelivery" tabindex="-1" aria-labelledby="modalDeliveryLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title fw-bold" id="modalDeliveryLabel">Delivery</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-            </div>
-            <div class="modal-body">
-              <p>
-                Oferecemos duas opções para receber nossos produtos:
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fw-bold" id="modalDeliveryLabel">Delivery</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <h2 class="img-fluid Cafe__bistro-titulo rounded-top-3 d-flex justify-content-between align-items-center"
+                data-bs-toggle="collapse" data-bs-target="#conteudoCascata" style="cursor: pointer;">
+                Encomendas para eventos
+                <i class="bi bi-chevron-up"></i>
+              </h2>
+
+              <p class="collapse mt-2 cafe__bistro-paragrafo" id="conteudoCascata">
+                Produzimos e entregamos os itens de café de nosso cardápio em grandes quantidades para seus eventos!
+                Basta entrar em contato e fazer a reserva com 72h de antecedência.
               </p>
-              <ul>
-                <li>
-                  <strong>Encomendas para eventos:</strong> Produzimos e entregamos os itens de café do nosso cardápio
-                  em grandes quantidades para seus eventos. É necessário fazer a reserva com 72h de antecedência.
-                </li>
-                <li>
-                  <strong>Entregas pelo aplicativo iFood:</strong> Consulte nosso cardápio pelo app e faça seu pedido de
-                  forma rápida e prática.
-                </li>
-              </ul>
+
+              <h2 class="img-fluid Cafe__bistro-titulo rounded-top-3 d-flex justify-content-between align-items-center"
+                data-bs-toggle="collapse" data-bs-target="#conteudoCascata1" style="cursor: pointer;">
+                Entrega por aplicativo
+                <i class="bi bi-chevron-up"></i>
+              </h2>
+
+              <p class="collapse mt-2 cafe__bistro-paragrafo" id="conteudoCascata1">
+                Entregamos pelos aplicativos Ifood e Rappi. Consulte nosso cardápio por lá e faça seu pedido!
+              </p>
+
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+              <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button> -->
             </div>
           </div>
         </div>
@@ -214,6 +288,7 @@
 
 
     </div>
+
     <section class="banners banner-2 d-flex flex-column justify-content-center text-center ">
       <div class="banners-titulo bg-body-secondary py-5 ">
         <h2 class="fw-bold">Portas abertas para todos os públicos.</h2>
@@ -274,11 +349,11 @@
       </div>
     </div>
 
-    <section class="banners banner-3 d-flex flex-column justify-content-center text-center"></section>
+    <section class="banners banner-3 d-flex flex-column justify-content-center text-center "></section>
 
     <div class="d-flex justify-content-center align-items-center mb-5 ">
       <form class="border border-secondary  my-4 my-xl-5 p-3 text-center 
-             w-50 w-md-75 w-xxl-50 mx-auto rounded-2">
+             w-50 w-md-75 w-xxl-50  mx-auto rounded-2">
         <h5 class="text-start fw-bold py-2 entre__contato">Entre em Contato!</h5>
 
         <div class="my-3">
@@ -289,13 +364,15 @@
 
           <input type="text" class="form-control border-secondary rounded-1 mb-3 " placeholder="Telefone" />
 
-          <div class="mb-3">
+          <div class="mb-3 ">
 
             <select class="form-select border-secondary rounded-1">
               <option selected>Preferência de contato</option>
+              </i class="bi bi-chevron-down seta__darkmode">
               <option value="email">E-mail</option>
               <option value="telefone">Telefone</option>
               <option value="whatsapp">WhatsApp</option>
+              </i>
             </select>
 
           </div>
@@ -528,6 +605,32 @@
       </div>
     </div>
   </div>
+
+  <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-body">
+      Hello, world! This is a toast message.
+      <div class="mt-2 pt-2 border-top">
+        <button type="button" class="btn btn-primary btn-sm">Take action</button>
+        <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="toast">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Example Code Start-->
+  <div class="toast toast-maior fade show position-fixed top-50 start-50 translate-middle" role="alert"
+    aria-live="assertive" aria-atomic="true">
+    <div class="toast-body">
+      <h2 class="cookie__titulo">Este site usa Cookies.</h2>
+      <p class="cookie__paragrafo fw-semibold">Armazenamos dados temporariamente para melhorar a sua experiência de navegação e recomendar conteúdo de seu interesse. 
+        Ao utilizar nossos serviços, você concorda com tal monitoramento.</p>
+      <div class="mt-5 pt-3 border-top d-flex justify-content-end gap-2">
+        <button type="button" class="btn btn-primary btn-sm">Aceitar</button>
+        <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="toast">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Example Code End -->
 
 </body>
 
