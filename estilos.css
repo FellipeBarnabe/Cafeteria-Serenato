@@ -341,3 +341,11 @@ body.dark-mode .toggle__darkmode .navbar-toggler-icon {
   margin-top: 10%;
   
 }
+
+.botão__toast-aceitar{
+  background-color: var(--marrom-claro);
+}
+
+.botão__toast-negar{
+  background-color: #868E96;
+}
